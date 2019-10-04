@@ -1,14 +1,9 @@
 import React from 'react';
 import './App.scss';
+import Home from './views/Home';
 
 const App = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Find Your Hero App!</h1>
-      </header>
-    </div>
-  );
+  return <Home />;
 }
 
 export default App;
