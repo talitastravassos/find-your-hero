@@ -23,17 +23,19 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.header_container}>
-        <div>
-          {/* <img
+          <img
             src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/08/Marvel-Vs.-DC.jpg"
             alt=""
-            width="750"
-          /> */}
+            // width="850"
+            className={styles.image}
+          />
+          <div className={styles.text_container}>
           <h1 className={styles.title}>Find Your Hero!</h1>
 
-          <InputField label={"Search"} name={"search"} onChange={onSearch} />
+          <InputField label={"Search for your fave superhero!"} name={"search"} onChange={onSearch} />
+          </div>
         </div>
-      </div>
+      
 
       <Result />
     </div>

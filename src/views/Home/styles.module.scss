@@ -1,6 +1,10 @@
+@import "./../../index.scss";
+
 .container{
-    margin: 1% 8% 8% 8%;
+    // @include background;
+    // margin: 1% 8% 8% 8%;
     // text-align: center;
+    overflow-x: hidden;
 }
 
 .header_container{
@@ -8,15 +12,40 @@
     flex-direction: row;
     justify-content: center;
     margin-bottom: 8%;
+    position: relative;
+    height: 20rem;
+    // background: rgba(42, 42, 42, 0.65);
 }
 
 .title{
     font-family: 'Permanent Marker', cursive;
     font-size: 5rem;
-    color: rgba(21, 18, 243, 0.657);
-    text-shadow: rgba(42, 42, 42, 0.65);
+    color: rgba(21, 18, 243, 0.9);
+    // text-shadow: rgba(42, 42, 42, 0.9);
     
     @media only screen and (max-width: 700px) {
         font-size: 2.5rem;
     }
+
+}
+
+.text_container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: space-around;
+    color: #fff;
+    
+    @media only screen and (max-width: 768px) {
+        top: 15%;
+        // justify-content: space-between;
+    }
+}
+
+
+.image{
+    // width: 16rem;
+    opacity: 0.3;
+    object-fit: cover;
 }

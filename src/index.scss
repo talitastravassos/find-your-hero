@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Alata|Permanent+Marker&display=swap');
 
+@mixin background {
+  background-image: url(https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/08/Marvel-Vs.-DC.jpg);
+  opacity: 0.4;
+}
+
 body {
   margin: 0;
   font-family: 'Alata', sans-serif;
@@ -13,3 +18,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
