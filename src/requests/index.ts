@@ -11,7 +11,7 @@ export const fetchHeroes = (search: string) => {
     request
       .get(`${search}`)
       .then(res => {
-        console.log(res);
+        // console.log(res);
         dispatch(getHeroes(res.data.results));
       })
       .catch(error => {
