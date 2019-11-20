@@ -38,6 +38,7 @@ export default function InputField({ label, name, onChange }: Props) {
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     // on change setState
+    event.preventDefault()
     setState(event.target.value);
   };
 

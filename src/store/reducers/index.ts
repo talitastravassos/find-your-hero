@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
 const initialState = {
-  heroes: []
+  heroes: {}
 };
 
 const heroesReducer = (state = initialState, action: any) => {
