@@ -8,7 +8,10 @@ interface Props {
 export default function HeroCard({ hero }: Props) {
   return (
     <div className={styles.card}>
-      <h3>{hero.name}</h3>
+      <img src={hero.image.url} alt={hero.name} height="350" />
+      <div className={styles.info_container}>
+        <h3>{hero.name}</h3>
+      </div>
     </div>
   );
 }

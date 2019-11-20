@@ -24,7 +24,13 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.header_container}>
         <div>
-          <h1>Find Your Hero!</h1>
+          {/* <img
+            src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2019/08/Marvel-Vs.-DC.jpg"
+            alt=""
+            width="750"
+          /> */}
+          <h1 className={styles.title}>Find Your Hero!</h1>
+
           <InputField label={"Search"} name={"search"} onChange={onSearch} />
         </div>
       </div>

@@ -1,3 +1,14 @@
 .card{
     margin: 2%;
+    box-shadow: 0px 1px 4px -1px rgba(42, 42, 42, 0.65);
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.info_container{
+    padding: 3% 5% 3% 5%;
+
 }
