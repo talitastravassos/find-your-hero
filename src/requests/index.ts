@@ -11,7 +11,7 @@ export const fetchHeroes = (search: string) => {
       .get(`${search}`)
       .then(res => {
         // console.log(res);
-        if (res.data.response == "success") {
+        if (res.data.response === "success") {
           dispatch(getHeroes(res.data.results));
         }
       })

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store";
 import App from "./App";
+import Details from "./views/Details";
 
 const Router = () => {
   return (
@@ -10,6 +11,7 @@ const Router = () => {
       <Switch>
         <Provider store={store}>
           <Route path="/" exact component={App} />
+          <Route path="/details/:heroname" exact component={Details} />
         </Provider>
       </Switch>
     </BrowserRouter>
