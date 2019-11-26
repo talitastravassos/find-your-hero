@@ -9,7 +9,7 @@ interface Props {
 export default function HeroCard({ hero }: Props) {
   return (
     <Link
-      to={{ pathname: `/details/${hero.name}`, state: { _id: `${hero.id}` } }}
+      to={{ pathname: `/details/${hero.name.replace(/\s/g, '').toLowerCase()}`, state: { _id: `${hero.id}` } }}
       style={{ textDecoration: "none" }}
     >
       <div className={styles.card}>
