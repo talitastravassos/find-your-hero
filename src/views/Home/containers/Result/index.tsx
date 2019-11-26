@@ -4,17 +4,17 @@ import { useSelector } from "react-redux";
 import HeroCard from "../../../../components/HeroCard";
 
 export default function Result() {
-  const search = useSelector((state: any) => state.heroes);
+  const search = useSelector((state: any) => state.heroes.searchHeroes);
 
   React.useEffect(() => {
-    console.log(search.heroes);
+    console.log(search);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [search]);
 
   return (
     <div className={styles.container}>
-      {search.heroes.length > 0 ? (
-        search.heroes.map((hero: any) => {
+      {search.length > 0 ? (
+        search.map((hero: any) => {
           return <HeroCard hero={hero} key={hero.id} />;
         })
       ) : (

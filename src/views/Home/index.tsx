@@ -1,17 +1,17 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { fetchHeroes } from "../../requests";
+import { fetchSearch } from "../../requests";
 import InputField from "../../components/Input";
 import styles from "./styles.module.scss";
 import Result from "./containers/Result";
 
 export default function Home() {
   const dispatch = useDispatch();
-  const heroes = useSelector((state: any) => state.heroes);
+  const heroes = useSelector((state: any) => state.heroes.searchHeroes);
 
   const onSearch = (search: string) => {
     if (search !== "") {
-      dispatch(fetchHeroes(search));
+      dispatch(fetchSearch(search));
     }
   };
 
