@@ -3,10 +3,11 @@ import { RouteComponentProps } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
 import { getHero } from "../../requests";
 import styles from "./styles.module.scss";
+import { Hero } from "../../typings/hero.types";
 
 export default function Details(props: RouteComponentProps) {
   const dispatch = useDispatch();
-  const hero = useSelector((state: any) => state.heroes.selectHero);
+  const hero: Hero = useSelector((state: any) => state.heroes.selectHero);
 
   React.useEffect(() => {
     const { _id } = props.location.state;

@@ -1,8 +1,14 @@
 import { combineReducers } from "redux";
+import { Hero, initialHero } from "../../typings/hero.types";
 
-const initialState = {
-  searchHeroes: {},
-  selectHero: {}
+export interface State {
+  searchHeroes: Hero[];
+  selectHero: Hero;
+}
+
+const initialState: State = {
+  searchHeroes: [initialHero],
+  selectHero: initialHero
 };
 
 const heroesReducer = (state = initialState, action: any) => {

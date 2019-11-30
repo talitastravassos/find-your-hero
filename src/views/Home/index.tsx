@@ -5,10 +5,11 @@ import { fetchSearch } from "../../requests";
 import InputField from "../../components/Input";
 import styles from "./styles.module.scss";
 import Result from "./containers/Result";
+import { Hero } from "../../typings/hero.types";
 
 export default function Home() {
   const dispatch = useDispatch();
-  const heroes = useSelector((state: any) => state.heroes.searchHeroes);
+  const heroes: Hero[] = useSelector((state: any) => state.heroes.searchHeroes);
   const [loading, setLoading] = React.useState(false);
 
   const onSearch = (search: string) => {

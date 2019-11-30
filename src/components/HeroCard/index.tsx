@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import { Link } from "react-router-dom";
+import { Hero } from "../../typings/hero.types";
 
 interface Props {
-  hero: any;
+  hero: Hero;
 }
 
 export default function HeroCard({ hero }: Props) {
