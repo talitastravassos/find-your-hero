@@ -6,6 +6,7 @@ import InputField from "../../components/Input";
 import styles from "./styles.module.scss";
 import Result from "./containers/Result";
 import { Hero } from "../../typings/hero.types";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -54,6 +55,8 @@ export default function Home() {
           <Loader type="RevolvingDot" color="blue" height={150} width={150} />
         </div>
       )}
+
+      <Footer />
     </div>
   );
 }
