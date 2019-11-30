@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { getHero } from "../../requests";
 import styles from "./styles.module.scss";
 import { Hero } from "../../typings/hero.types";
+import Footer from "../../components/Footer";
 
 export default function Details(props: RouteComponentProps) {
   const dispatch = useDispatch();
@@ -22,10 +23,10 @@ export default function Details(props: RouteComponentProps) {
   }, [hero]);
 
   return (
-    <>
-      <div className={styles.container}>
+    <div className={styles.container}>
+      
         {hero.image ? (
-          <>
+          <div className={styles.container_details}>
             <img
               src={hero.image.url}
               alt={hero.name}
@@ -75,11 +76,12 @@ export default function Details(props: RouteComponentProps) {
                 <p>Occupation: {hero.work["occupation"]}</p>
               </div>
             </div>
-          </>
+            </div>
         ) : (
           ""
         )}
-      </div>
-    </>
+      
+      <Footer />
+    </div>
   );
 }

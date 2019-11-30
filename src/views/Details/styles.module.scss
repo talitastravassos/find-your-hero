@@ -1,9 +1,13 @@
-.container {
-  margin: 5%;
+.container{
+  position: relative;
+  min-height: 100vh;
+}
+
+.container_details {
+  padding: 5%;
   display: grid;
   grid-template-columns: 2fr 3fr;
-  max-height: 650px;
-
+  
   @media only screen and (max-width: 700px) {
     grid-template-columns: 3fr;
   }
@@ -15,7 +19,7 @@
   background-color: white;
   margin: 2%;
   margin-top: 0;
-  padding: 2%;
+  padding: 2.5rem 2%;
 
   @media only screen and (max-width: 800px) {
     margin: 2% 0;
