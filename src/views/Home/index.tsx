@@ -48,13 +48,13 @@ export default function Home() {
         </div>
       </div>
 
-      {!loading ? (
-        <Result />
-      ) : (
-        <div className={styles.container_loader}>
+      <div className={styles.container_result}>
+        {!loading ? (
+          <Result />
+        ) : (
           <Loader type="RevolvingDot" color="blue" height={150} width={150} />
-        </div>
-      )}
+        )}
+      </div>
 
       <Footer />
     </div>

@@ -1,6 +1,6 @@
 .container{
   position: relative;
-  min-height: 100vh;
+  min-height: 130vh;
 }
 
 .container_details {
@@ -23,6 +23,7 @@
 
   @media only screen and (max-width: 800px) {
     margin: 2% 0;
+    margin-bottom: 15%;
   }
 }
 

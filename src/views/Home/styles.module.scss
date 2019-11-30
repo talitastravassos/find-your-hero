@@ -1,9 +1,6 @@
 @import "./../../index.scss";
 
 .container {
-  // @include background;
-  // margin: 1% 8% 8% 8%;
-  // text-align: center;
   overflow-x: hidden;
   position: relative;
   min-height: 100vh;
@@ -16,14 +13,12 @@
   margin-bottom: 5%;
   position: relative;
   height: 15rem;
-  // background: rgba(42, 42, 42, 0.65);
 }
 
 .title {
   font-family: "Permanent Marker", cursive;
   font-size: 5rem;
   color: rgba(21, 18, 243, 0.9);
-  // text-shadow: rgba(42, 42, 42, 0.9);
   margin: 20px 0;
 
   @media only screen and (max-width: 700px) {
@@ -36,22 +31,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: space-around;
   color: #fff;
 
   @media only screen and (max-width: 768px) {
     top: 15%;
-    // justify-content: space-between;
   }
 }
 
 .image {
-  // width: 16rem;
   opacity: 0.3;
   object-fit: cover;
 }
 
-.container_loader {
+.container_result {
   display: flex;
   justify-content: center;
+  padding-bottom: 4.5rem;
 }
