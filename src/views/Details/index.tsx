@@ -5,6 +5,7 @@ import { getHero } from "../../requests";
 import styles from "./styles.module.scss";
 import { Hero } from "../../typings/hero.types";
 import Footer from "../../components/Footer";
+import Navbar from "../../components/Navbar";
 
 export default function Details(props: RouteComponentProps) {
   const dispatch = useDispatch();
@@ -24,6 +25,7 @@ export default function Details(props: RouteComponentProps) {
 
   return (
     <div className={styles.container}>
+      <Navbar />
       
         {hero.image ? (
           <div className={styles.container_details}>

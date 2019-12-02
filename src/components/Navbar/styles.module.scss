@@ -1,0 +1,32 @@
+.container {
+  overflow: hidden;
+}
+
+.navbar_container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 3.5rem;
+}
+
+.title {
+  font-family: "Permanent Marker", cursive;
+  font-size: 2rem;
+  cursor: pointer;
+  color: rgba(21, 18, 243, 0.9);
+  margin: 5px 20px;
+
+  @media only screen and (max-width: 700px) {
+    font-size: 1.8rem;
+  }
+}
+
+.text_container {
+  position: absolute;
+  color: #fff;
+}
+
+.image {
+  opacity: 0.3;
+  object-fit: cover;
+}
