@@ -1411,7 +1411,7 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-redux@^7.1.4":
+"@types/react-redux@^7.1.6":
   version "7.1.6"
   resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-7.1.6.tgz#9a2097d1c74cfd7b4ec3d1c4e30fe806c2058da2"
   integrity sha512-OjIrYtOg+j7MwNURIZ1BHoxWEzX3lDS/5169JqXUE+1XcOHGRVZirnnsexBDl5ykjxXlNHi4AS0aOismP3DaIA==
